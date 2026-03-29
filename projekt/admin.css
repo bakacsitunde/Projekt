@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e7b5e8;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #382035;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#adminTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f8ecf8;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#adminTable thead {
+  background-color: #a653ad;
+  color: white;
+}
+
+#adminTable th,
+#adminTable td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e4b9e4;
+}
+
+#adminTable tbody tr:nth-child(even) {
+  background-color: #f2e1f2;
+}
+
+#adminTable tbody tr:hover {
+  background-color: #e3c9d6;
+  transition: 0.3s;
+}
+
+#logoutBtn {
+  justify-self: center;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: #a653ad;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#logoutBtn:hover {
+  background-color: #9b42a3;
+}
+
+@media (max-width: 768px) {
+  #adminTable th,
+  #adminTable td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  #adminTable {
+    display: block;
+    overflow-x: auto;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  #logoutBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

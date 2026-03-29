@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e7b5e8;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+nav{
+    background: linear-gradient(135deg, #9b42a3, #c86dd7);
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bemutato{
+    background: linear-gradient(135deg, #f8e1f8, #e7b5e8);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.bemutato h2 {
+    font-size: 2.5rem;
+    color: #6a1b75;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.bemutato p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.form-section{
+    background: linear-gradient(135deg, #f8e1f8, #e7b5e8);
+    padding: 40px 20px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 400px; /* kisebb lett */
+    width: 100%;
+    padding: 25px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #6a1b75;
+}
+
+.input, textarea{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus{
+    border-color: #9b42a3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(155,66,163,0.3);
+}
+
+.contact-form button{
+    background: #9b42a3;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    transform: scale(1.05);
+    background: #7d2f84;
+}
+
+
+footer{
+    background-color: #b676bc; 
+    opacity: 0.8;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+table{
+    width: 50%;
+    font-size: small;
+}
+
+
+
+
+.table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.table thead {
+    background: linear-gradient(135deg, #9b42a3, #c86dd7);
+    color: white;
+}
+
+.table thead th {
+    border-color: #c86dd7;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #e7b5e8;
+}
+
+.table tbody tr:hover {
+    background-color: #f8e1f8;
+}
+
+
+.list-group-item {
+    border: 1px solid #c86dd7;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    color: #6a1b75;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8e1f8;
+    border-color: #9b42a3;
+    transform: translateX(5px);
+}
+
+
+.btn-success {
+    background-color: #a8e6cf !important;
+    border-color: #a8e6cf !important;
+    color: #2d6a4f !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-success:hover {
+    background-color: #95d5b2 !important;
+    border-color: #95d5b2 !important;
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #ff9999 !important;
+    border-color: #ff9999 !important;
+    color: #6a1b42 !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-danger:hover {
+    background-color: #ff7777 !important;
+    border-color: #ff7777 !important;
+    transform: scale(1.05);
+}
+
+/* Kedvencek oldal - cardok */
+.kedvencek-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.kedvenc-card {
+    width: 200px;
+    border: 2px solid #c86dd7;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.kedvenc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.kedvenc-card .card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.kedvenc-card .card-title {
+    color: #6a1b75;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.kedvenc-card .btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+}
+
+.no-favorites {
+    text-align: center;
+    color: #6a1b75;
+    font-size: 1.2rem;
+    padding: 40px;
+}

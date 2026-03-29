@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedvencek - FonalZoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="fooldal.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="fooldal.html">Kezdőlap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="termekek.html">Termékek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Elérhetőségek</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="kedvencek.html"><i class="bi bi-heart"></i> Kedvencek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kosar.html"><i class="bi bi-cart"></i> Kosár</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Kedvencek</h2>
+        <div id="kedvencekLista" class="kedvencek-container mt-3"></div>
+        <button onclick="kedvencekTorles()" class="btn btn-danger mt-3">Összes eltávolítása</button>
+    </div>
+
+    <script src="kosar-kedvenc/kedvencek.js"></script>
+    <script>
+        window.onload = function() {
+            kedvencekMegjelenit();
+        };
+    </script>
+</body>
+</html>
